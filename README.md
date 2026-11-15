@@ -6,16 +6,16 @@
 
 Desenvolvedor de software há **6 anos**, especialista em **mobile com Flutter**. Crio apps para Android e iOS do primeiro commit até a publicação nas lojas, com arquitetura limpa e foco em quem vai usar. Também tenho **Kotlin, Swift, Java e Python** na bagagem.
 
-- 📱 Fundador da **[Recomece Mulher](https://recomecemulher.com/)**, empresa de apps de cuidados pessoais femininos. O **Raízes** já passou de **400 mil downloads**.
-- ☕ Criei a **[Unidunedev](https://github.com/unidunedev)**, uma comunidade para jovens aprenderem programação, Git e trabalho em equipe na prática.
-- 🪖 Ex-militar: disciplina, foco e missão dada é missão cumprida.
-- 🎮 Gamer nas horas vagas.
+- Fundador da **[Recomece Mulher](https://recomecemulher.com/)**, empresa de apps de cuidados pessoais femininos. O **Raízes** já passou de **400 mil downloads**.
+- Criei a **[Unidunedev](https://github.com/unidunedev)**, uma comunidade para jovens aprenderem programação, Git e trabalho em equipe na prática.
+- Ex-militar: disciplina, foco e missão dada é missão cumprida.
+- Gamer nas horas vagas.
 
 <p align="center">
   <img src="assets/ficha-v2.svg" alt="Projetos e linguagens: Recomece Mulher, Unidunedev, Help Entregas; Flutter, Kotlin, Swift, Java e Python" width="100%">
 </p>
 
-### 🚀 Projetos em destaque
+### Projetos em destaque
 
 | Projeto | O que é |
 | --- | --- |
@@ -23,23 +23,23 @@ Desenvolvedor de software há **6 anos**, especialista em **mobile com Flutter**
 | **[Unidunedev](https://github.com/unidunedev)** | Comunidade dev universitária: [onboarding](https://onboarding.unidunedev.workers.dev) com mural via Pull Request e [site de estudos](https://estudos.unidunedev.workers.dev) com trilhas de lógica, linguagens e profissões. |
 | **Help Entregas** | Apps de entrega em Flutter: o app de quem pede e o app do entregador. |
 
-### 🧰 Ferramentas
+### Ferramentas
 
 <p>
-  <img src="https://img.shields.io/badge/Flutter-2a2140?style=for-the-badge&logo=flutter&logoColor=e8b47a" alt="Flutter">
-  <img src="https://img.shields.io/badge/Dart-2a2140?style=for-the-badge&logo=dart&logoColor=e8b47a" alt="Dart">
-  <img src="https://img.shields.io/badge/Kotlin-2a2140?style=for-the-badge&logo=kotlin&logoColor=e8b47a" alt="Kotlin">
-  <img src="https://img.shields.io/badge/Swift-2a2140?style=for-the-badge&logo=swift&logoColor=e8b47a" alt="Swift">
-  <img src="https://img.shields.io/badge/Java-2a2140?style=for-the-badge&logo=openjdk&logoColor=e8b47a" alt="Java">
-  <img src="https://img.shields.io/badge/Python-2a2140?style=for-the-badge&logo=python&logoColor=e8b47a" alt="Python">
-  <img src="https://img.shields.io/badge/Firebase-2a2140?style=for-the-badge&logo=firebase&logoColor=e8b47a" alt="Firebase">
-  <img src="https://img.shields.io/badge/Xcode-2a2140?style=for-the-badge&logo=xcode&logoColor=e8b47a" alt="Xcode">
-  <img src="https://img.shields.io/badge/Android_Studio-2a2140?style=for-the-badge&logo=androidstudio&logoColor=e8b47a" alt="Android Studio">
-  <img src="https://img.shields.io/badge/Git-2a2140?style=for-the-badge&logo=git&logoColor=e8b47a" alt="Git">
-  <img src="https://img.shields.io/badge/Figma-2a2140?style=for-the-badge&logo=figma&logoColor=e8b47a" alt="Figma">
+  <img src="https://img.shields.io/badge/Flutter-3a2a1e?style=for-the-badge&logo=flutter&logoColor=e8b47a" alt="Flutter">
+  <img src="https://img.shields.io/badge/Dart-3a2a1e?style=for-the-badge&logo=dart&logoColor=e8b47a" alt="Dart">
+  <img src="https://img.shields.io/badge/Kotlin-3a2a1e?style=for-the-badge&logo=kotlin&logoColor=e8b47a" alt="Kotlin">
+  <img src="https://img.shields.io/badge/Swift-3a2a1e?style=for-the-badge&logo=swift&logoColor=e8b47a" alt="Swift">
+  <img src="https://img.shields.io/badge/Java-3a2a1e?style=for-the-badge&logo=openjdk&logoColor=e8b47a" alt="Java">
+  <img src="https://img.shields.io/badge/Python-3a2a1e?style=for-the-badge&logo=python&logoColor=e8b47a" alt="Python">
+  <img src="https://img.shields.io/badge/Firebase-3a2a1e?style=for-the-badge&logo=firebase&logoColor=e8b47a" alt="Firebase">
+  <img src="https://img.shields.io/badge/Xcode-3a2a1e?style=for-the-badge&logo=xcode&logoColor=e8b47a" alt="Xcode">
+  <img src="https://img.shields.io/badge/Android_Studio-3a2a1e?style=for-the-badge&logo=androidstudio&logoColor=e8b47a" alt="Android Studio">
+  <img src="https://img.shields.io/badge/Git-3a2a1e?style=for-the-badge&logo=git&logoColor=e8b47a" alt="Git">
+  <img src="https://img.shields.io/badge/Figma-3a2a1e?style=for-the-badge&logo=figma&logoColor=e8b47a" alt="Figma">
 </p>
 
-### 🐍 A cobrinha comendo meus commits
+### A cobrinha comendo meus commits
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/clehdev/clehdev/output/snake-escuro.svg">
@@ -47,17 +47,17 @@ Desenvolvedor de software há **6 anos**, especialista em **mobile com Flutter**
   <img alt="Uma cobrinha percorrendo o gráfico de contribuições" src="https://raw.githubusercontent.com/clehdev/clehdev/output/snake-claro.svg" width="100%">
 </picture>
 
-### 📫 Bora conversar?
+### Bora conversar?
 
 <p>
-  <a href="https://www.linkedin.com/in/cledilson-programador"><img src="https://img.shields.io/badge/LinkedIn-2a2140?style=for-the-badge&logo=linkedin&logoColor=e8b47a" alt="LinkedIn"></a>
-  <a href="https://www.instagram.com/cleh.dev"><img src="https://img.shields.io/badge/Instagram-2a2140?style=for-the-badge&logo=instagram&logoColor=e8b47a" alt="Instagram"></a>
-  <a href="https://recomecemulher.com/"><img src="https://img.shields.io/badge/Recomece_Mulher-2a2140?style=for-the-badge&logo=googlechrome&logoColor=e8b47a" alt="Recomece Mulher"></a>
-  <a href="https://github.com/unidunedev"><img src="https://img.shields.io/badge/Unidunedev-2a2140?style=for-the-badge&logo=github&logoColor=e8b47a" alt="Unidunedev"></a>
+  <a href="https://www.linkedin.com/in/cledilson-programador"><img src="https://img.shields.io/badge/LinkedIn-3a2a1e?style=for-the-badge&logo=linkedin&logoColor=e8b47a" alt="LinkedIn"></a>
+  <a href="https://www.instagram.com/cleh.dev"><img src="https://img.shields.io/badge/Instagram-3a2a1e?style=for-the-badge&logo=instagram&logoColor=e8b47a" alt="Instagram"></a>
+  <a href="https://recomecemulher.com/"><img src="https://img.shields.io/badge/Recomece_Mulher-3a2a1e?style=for-the-badge&logo=googlechrome&logoColor=e8b47a" alt="Recomece Mulher"></a>
+  <a href="https://github.com/unidunedev"><img src="https://img.shields.io/badge/Unidunedev-3a2a1e?style=for-the-badge&logo=github&logoColor=e8b47a" alt="Unidunedev"></a>
 </p>
 
 <details>
-<summary>🇺🇸 <b>English</b></summary>
+<summary><b>English</b></summary>
 <br>
 
 Hi! I'm **Cledilson**, a software developer with **6 years of experience**, specialized in **mobile development with Flutter** (Android and iOS), also working with Kotlin, Swift, Java and Python.
@@ -68,4 +68,4 @@ Hi! I'm **Cledilson**, a software developer with **6 years of experience**, spec
 
 </details>
 
-<p align="center"><sub>Capa e ficha animadas feitas à mão em SVG + CSS · com café ☕</sub></p>
+<p align="center"><sub>Capa e ficha animadas feitas à mão em SVG + CSS · com café</sub></p>
