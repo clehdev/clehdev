@@ -6,7 +6,7 @@
 
 Desenvolvedor de software há **6 anos**, especialista em **mobile com Flutter**. Crio apps para Android e iOS do primeiro commit até a publicação nas lojas, com arquitetura limpa e foco em quem vai usar. Também tenho **Kotlin, Swift, Java e Python** na bagagem.
 
-- 📱 Fundador da **Recomece Mulher**, empresa de apps de cuidados pessoais femininos. O **Raízes** já passou de **400 mil downloads**.
+- 📱 Fundador da **[Recomece Mulher](https://recomecemulher.com/)**, empresa de apps de cuidados pessoais femininos. O **Raízes** já passou de **400 mil downloads**.
 - ☕ Criei a **[Unidunedev](https://github.com/unidunedev)**, uma comunidade para jovens aprenderem programação, Git e trabalho em equipe na prática.
 - 🪖 Ex-militar: disciplina, foco e missão dada é missão cumprida.
 - 🎮 Gamer nas horas vagas.
@@ -19,7 +19,7 @@ Desenvolvedor de software há **6 anos**, especialista em **mobile com Flutter**
 
 | Projeto | O que é |
 | --- | --- |
-| **Recomece Mulher** | Apps de cuidados pessoais femininos. O **Raízes** tem mais de 400 mil downloads. [Ver na Google Play ↗](https://play.google.com/store/apps/details?id=company.mms2.empoderamentoblackpower) |
+| **[Recomece Mulher](https://recomecemulher.com/)** | Apps de cuidados pessoais femininos. O **Raízes** tem mais de 400 mil downloads. [Conheça os apps e baixe ↗](https://recomecemulher.com/) |
 | **[Unidunedev](https://github.com/unidunedev)** | Comunidade dev universitária: [onboarding](https://onboarding.unidunedev.workers.dev) com mural via Pull Request e [site de estudos](https://estudos.unidunedev.workers.dev) com trilhas de lógica, linguagens e profissões. |
 | **Help Entregas** | Apps de entrega em Flutter: o app de quem pede e o app do entregador. |
 
@@ -52,6 +52,7 @@ Desenvolvedor de software há **6 anos**, especialista em **mobile com Flutter**
 <p>
   <a href="https://www.linkedin.com/in/cledilson-programador"><img src="https://img.shields.io/badge/LinkedIn-2a2140?style=for-the-badge&logo=linkedin&logoColor=e8b47a" alt="LinkedIn"></a>
   <a href="https://www.instagram.com/clehwisp__"><img src="https://img.shields.io/badge/Instagram-2a2140?style=for-the-badge&logo=instagram&logoColor=e8b47a" alt="Instagram"></a>
+  <a href="https://recomecemulher.com/"><img src="https://img.shields.io/badge/Recomece_Mulher-2a2140?style=for-the-badge&logo=googlechrome&logoColor=e8b47a" alt="Recomece Mulher"></a>
   <a href="https://github.com/unidunedev"><img src="https://img.shields.io/badge/Unidunedev-2a2140?style=for-the-badge&logo=github&logoColor=e8b47a" alt="Unidunedev"></a>
 </p>
 
@@ -61,7 +62,7 @@ Desenvolvedor de software há **6 anos**, especialista em **mobile com Flutter**
 
 Hi! I'm **Cledilson**, a software developer with **6 years of experience**, specialized in **mobile development with Flutter** (Android and iOS), also working with Kotlin, Swift, Java and Python.
 
-- Founder of **Recomece Mulher**, a company of personal care apps for women. Our app **Raízes** has over **400k downloads**.
+- Founder of **[Recomece Mulher](https://recomecemulher.com/)**, a company of personal care apps for women. Our app **Raízes** has over **400k downloads**.
 - Creator of **[Unidunedev](https://github.com/unidunedev)**, a community that helps young people learn programming, Git and teamwork by building real projects.
 - Former military (discipline and focus) and a gamer at heart.
 
