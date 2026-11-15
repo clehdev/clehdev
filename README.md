@@ -39,7 +39,7 @@ Desenvolvedor de software há **6 anos**, especialista em **mobile com Flutter**
   <img src="https://img.shields.io/badge/Figma-3a2a1e?style=for-the-badge&logo=figma&logoColor=e8b47a" alt="Figma">
 </p>
 
-### A cobrinha comendo meus commits
+### Meus commits? Nhac
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/clehdev/clehdev/output/snake-escuro.svg">
