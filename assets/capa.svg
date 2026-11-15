@@ -1,0 +1,199 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" width="1200" height="420" role="img" aria-label="Cledilson Silva, especialista mobile com Flutter">
+<style>
+  .t { font-family: 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+  .m { font-family: ui-monospace, 'Cascadia Code', 'SFMono-Regular', Consolas, 'Liberation Mono', monospace; }
+  /* estrelas */
+  .estrela { animation: brilho 3s ease-in-out infinite alternate; }
+  @keyframes brilho { from { opacity: .15; } to { opacity: .9; } }
+  /* chuva: o padrão se repete a cada 40px, então descer 40px e recomeçar parece infinito */
+  .chuva { animation: chuva .8s linear infinite; }
+  @keyframes chuva { from { transform: translateY(-40px); } to { transform: translateY(0); } }
+  /* cursor e prompt */
+  .cursor { animation: piscar 1s steps(1) infinite; }
+  @keyframes piscar { 0%, 49% { opacity: 1; } 50%, 100% { opacity: 0; } }
+  /* cargos alternando: 4 frases, cada uma com 3s no ar */
+  .cargo { opacity: 0; animation: cargo 12s ease-in-out infinite; }
+  .c2 { animation-delay: 3s; } .c3 { animation-delay: 6s; } .c4 { animation-delay: 9s; }
+  @keyframes cargo {
+    0% { opacity: 0; transform: translateY(12px); }
+    4%, 21% { opacity: 1; transform: translateY(0); }
+    25%, 100% { opacity: 0; transform: translateY(-12px); }
+  }
+  /* chips flutuando de leve */
+  .chip { animation: boiar 4s ease-in-out infinite; }
+  @keyframes boiar { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-4px); } }
+  /* código subindo no fundo */
+  .token { opacity: 0; animation: subir linear infinite; }
+  @keyframes subir {
+    0% { opacity: 0; transform: translateY(0); }
+    15% { opacity: .35; } 80% { opacity: .2; }
+    100% { opacity: 0; transform: translateY(-330px); }
+  }
+  /* vapor do café */
+  .vapor { transform-box: fill-box; animation: vapor 2.4s ease-in-out infinite; }
+  .v2 { animation-delay: .6s; } .v3 { animation-delay: 1.2s; }
+  @keyframes vapor { 0% { opacity: 0; transform: translateY(8px); } 35% { opacity: .95; } 100% { opacity: 0; transform: translateY(-18px); } }
+  /* app no celular: hot reload a cada 8s e os cards entram em sequência */
+  .reload { transform-box: fill-box; transform-origin: center; animation: reload 8s ease-in-out infinite; }
+  @keyframes reload {
+    0% { opacity: 0; transform: scale(.6); }
+    4%, 14% { opacity: 1; transform: scale(1); }
+    20%, 100% { opacity: 0; transform: scale(.9); }
+  }
+  .card { opacity: 0; animation: card 8s ease-out infinite both; }
+  .k2 { animation-delay: .25s; } .k3 { animation-delay: .5s; }
+  @keyframes card {
+    0%, 14% { opacity: 0; transform: translateX(26px); }
+    24%, 90% { opacity: 1; transform: translateX(0); }
+    97%, 100% { opacity: 0; transform: translateX(0); }
+  }
+  .fab { transform-box: fill-box; transform-origin: center; animation: fab 2s ease-in-out infinite; }
+  @keyframes fab { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.12); } }
+  .tela { animation: tela 4s ease-in-out infinite alternate; }
+  @keyframes tela { from { opacity: .55; } to { opacity: 1; } }
+  /* controle: botões acendendo em sequência e uma "jogada" de vez em quando */
+  .botao { animation: botao 2.4s ease-in-out infinite; }
+  .b2 { animation-delay: .6s; } .b3 { animation-delay: 1.2s; } .b4 { animation-delay: 1.8s; }
+  @keyframes botao { 0%, 70%, 100% { opacity: .45; } 10%, 30% { opacity: 1; } }
+  .controle { transform-box: fill-box; transform-origin: 50% 100%; animation: jogada 6s ease-in-out infinite; }
+  @keyframes jogada { 0%, 80%, 100% { transform: rotate(0); } 84% { transform: rotate(-4deg); } 88% { transform: rotate(3deg); } 92% { transform: rotate(-2deg); } }
+  /* plaquinhas militares balançando como um pêndulo, presas no topo */
+  .plaquinhas { transform-box: view-box; transform-origin: 652px 0px; animation: pendulo 5s ease-in-out infinite alternate; }
+  @keyframes pendulo { from { transform: rotate(-5deg); } to { transform: rotate(5deg); } }
+  .luz { animation: tela 5s ease-in-out infinite alternate; }
+  @media (prefers-reduced-motion: reduce) { * { animation: none !important; opacity: 1; } .token, .c2, .c3, .c4, .reload { opacity: 0 !important; } }
+</style>
+<defs>
+  <clipPath id="cartao"><rect width="1200" height="420" rx="28"/></clipPath>
+  <linearGradient id="fundo" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#15111f"/><stop offset=".55" stop-color="#231b36"/><stop offset="1" stop-color="#3a2620"/>
+  </linearGradient>
+  <radialGradient id="abajur" cx="0.5" cy="0.5" r="0.5">
+    <stop offset="0" stop-color="#ffbe6e" stop-opacity=".28"/><stop offset="1" stop-color="#ffbe6e" stop-opacity="0"/>
+  </radialGradient>
+  <radialGradient id="brilhoTela" cx="0.5" cy="0.5" r="0.5">
+    <stop offset="0" stop-color="#8fbfec" stop-opacity=".35"/><stop offset="1" stop-color="#8fbfec" stop-opacity="0"/>
+  </radialGradient>
+  <linearGradient id="ceu" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1b2342"/><stop offset="1" stop-color="#2c2f5e"/></linearGradient>
+  <clipPath id="vidro"><rect x="905" y="40" width="230" height="190" rx="6"/></clipPath>
+  <pattern id="gotas" width="18" height="40" patternUnits="userSpaceOnUse">
+    <line x1="6" y1="0" x2="3" y2="13" stroke="#bccdff" stroke-opacity=".5" stroke-width="1.4"/>
+    <line x1="15" y1="20" x2="12" y2="31" stroke="#bccdff" stroke-opacity=".35" stroke-width="1.2"/>
+  </pattern>
+  <linearGradient id="metal" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#d9dde3"/><stop offset=".5" stop-color="#9aa1ab"/><stop offset="1" stop-color="#c8cdd4"/></linearGradient>
+</defs>
+<g clip-path="url(#cartao)">
+  <rect width="1200" height="420" fill="url(#fundo)"/>
+  <circle class="luz" cx="980" cy="330" r="260" fill="url(#abajur)"/>
+
+  <circle class="estrela" cx="640" cy="40" r="1.6" fill="#fff6dc" style="animation-delay:0.00s"/>
+  <circle class="estrela" cx="700" cy="90" r="1.6" fill="#fff6dc" style="animation-delay:0.45s"/>
+  <circle class="estrela" cx="760" cy="30" r="1.6" fill="#fff6dc" style="animation-delay:0.90s"/>
+  <circle class="estrela" cx="820" cy="70" r="1.6" fill="#fff6dc" style="animation-delay:1.35s"/>
+  <circle class="estrela" cx="610" cy="140" r="1.6" fill="#fff6dc" style="animation-delay:1.80s"/>
+  <circle class="estrela" cx="860" cy="120" r="1.6" fill="#fff6dc" style="animation-delay:2.25s"/>
+  <circle class="estrela" cx="560" cy="26" r="1.6" fill="#fff6dc" style="animation-delay:2.70s"/>
+  <circle class="estrela" cx="470" cy="40" r="1.6" fill="#fff6dc" style="animation-delay:3.15s"/>
+  <circle class="estrela" cx="1170" cy="250" r="1.6" fill="#fff6dc" style="animation-delay:3.60s"/>
+  <circle class="estrela" cx="880" cy="30" r="1.6" fill="#fff6dc" style="animation-delay:4.05s"/>
+  <rect x="905" y="40" width="230" height="190" rx="6" fill="url(#ceu)"/>
+  <g clip-path="url(#vidro)">
+    <circle cx="1095" cy="82" r="30" fill="#f5e9c8" opacity=".18"/>
+    <circle cx="1095" cy="82" r="18" fill="#f5e9c8"/>
+    <rect class="chuva" x="895" y="0" width="260" height="280" fill="url(#gotas)"/>
+  </g>
+  <rect x="900" y="35" width="240" height="200" rx="10" fill="none" stroke="#5a4230" stroke-width="10"/>
+  <path d="M1020 37v196M902 135h236" stroke="#5a4230" stroke-width="7"/>
+  <text class="token m" x="640" y="380" font-size="14" fill="#e8b47a" style="animation-duration:13s;animation-delay:0.0s">build()</text>
+  <text class="token m" x="700" y="380" font-size="14" fill="#e8b47a" style="animation-duration:11s;animation-delay:1.9s">Widget</text>
+  <text class="token m" x="760" y="380" font-size="14" fill="#e8b47a" style="animation-duration:15s;animation-delay:3.8s">setState</text>
+  <text class="token m" x="820" y="380" font-size="14" fill="#e8b47a" style="animation-duration:12s;animation-delay:5.7s">async</text>
+  <text class="token m" x="660" y="380" font-size="14" fill="#e8b47a" style="animation-duration:17s;animation-delay:7.6s">fun</text>
+  <text class="token m" x="880" y="380" font-size="14" fill="#e8b47a" style="animation-duration:14s;animation-delay:9.5s">let</text>
+  <text class="token m" x="730" y="380" font-size="14" fill="#e8b47a" style="animation-duration:16s;animation-delay:0.4s">@override</text>
+  <text class="token m" x="850" y="380" font-size="14" fill="#e8b47a" style="animation-duration:10s;animation-delay:2.3s">Future</text>
+  <text class="token m" x="620" y="380" font-size="14" fill="#e8b47a" style="animation-duration:18s;animation-delay:4.2s">=&gt;</text>
+  <g class="plaquinhas">
+    <path d="M652 0 L652 96" stroke="#9aa1ab" stroke-width="2" stroke-dasharray="3 3"/>
+    <rect x="628" y="96" width="44" height="64" rx="14" fill="url(#metal)" transform="rotate(8 650 128)"/>
+    <rect x="626" y="92" width="48" height="68" rx="15" fill="url(#metal)" stroke="#7d848e" stroke-width="1.5"/>
+    <circle cx="650" cy="102" r="3.2" fill="#5d636c"/>
+    <text class="m" x="650" y="124" text-anchor="middle" font-size="8.5" font-weight="700" fill="#4a4f57">CLEHDEV</text>
+    <text class="m" x="650" y="136" text-anchor="middle" font-size="7.5" fill="#4a4f57">MOBILE</text>
+    <text class="m" x="650" y="147" text-anchor="middle" font-size="7.5" fill="#4a4f57">DEV · 6Y</text>
+  </g>
+  <rect x="0" y="372" width="1200" height="52" fill="#47301f"/>
+  <rect x="0" y="368" width="1200" height="6" fill="#6d4a31"/>
+  <ellipse class="tela" cx="770" cy="270" rx="150" ry="120" fill="url(#brilhoTela)"/>
+  <path d="M735 372 L752 336 H788 L805 372 Z" fill="#2a2336"/>
+  <rect x="705" y="128" width="130" height="236" rx="20" fill="#0f0c17" stroke="#3d3450" stroke-width="3"/>
+  <rect x="713" y="138" width="114" height="216" rx="14" fill="#1d1830"/>
+  <rect x="752" y="143" width="36" height="6" rx="3" fill="#0f0c17"/>
+  <rect x="721" y="158" width="98" height="24" rx="6" fill="#e8b47a"/>
+  <text class="t" x="770" y="174.5" text-anchor="middle" font-size="11" font-weight="800" fill="#2b1a12">app.dart</text>
+  <g class="card">
+    <rect x="721" y="192" width="98" height="32" rx="7" fill="#2d2645"/>
+    <circle cx="735" cy="208" r="7" fill="#8fbfec"/>
+    <rect x="747" y="201" width="54" height="5" rx="2.5" fill="#cbbfe0"/>
+    <rect x="747" y="211" width="34" height="4" rx="2" fill="#6f6590"/>
+  </g>
+  <g class="card k2">
+    <rect x="721" y="232" width="98" height="32" rx="7" fill="#2d2645"/>
+    <circle cx="735" cy="248" r="7" fill="#f2a7b8"/>
+    <rect x="747" y="241" width="40" height="5" rx="2.5" fill="#cbbfe0"/>
+    <rect x="747" y="251" width="50" height="4" rx="2" fill="#6f6590"/>
+  </g>
+  <g class="card k3">
+    <rect x="721" y="272" width="98" height="32" rx="7" fill="#2d2645"/>
+    <circle cx="735" cy="288" r="7" fill="#9be0c4"/>
+    <rect x="747" y="281" width="48" height="5" rx="2.5" fill="#cbbfe0"/>
+    <rect x="747" y="291" width="28" height="4" rx="2" fill="#6f6590"/>
+  </g>
+  <g class="fab"><circle cx="806" cy="333" r="12" fill="#e8b47a"/><path d="M806 327v12M800 333h12" stroke="#2b1a12" stroke-width="2.6" stroke-linecap="round"/></g>
+  <g class="reload">
+    <rect x="740" y="98" width="104" height="26" rx="13" fill="#ffd95a"/>
+    <path d="M754 103 l-6 10 h5 l-3 7 9 -11 h-5 l3 -6 z" fill="#2b1a12"/>
+    <text class="m" x="801" y="115.5" text-anchor="middle" font-size="11" font-weight="700" fill="#2b1a12">hot reload</text>
+  </g>
+  <path class="vapor" d="M878 324c-6-5 6-9 0-15" fill="none" stroke="#e8b47a" stroke-width="4" stroke-linecap="round"/>
+  <path class="vapor v2" d="M891 324c-6-5 6-9 0-15" fill="none" stroke="#e8b47a" stroke-width="4" stroke-linecap="round"/>
+  <path class="vapor v3" d="M904 324c-6-5 6-9 0-15" fill="none" stroke="#e8b47a" stroke-width="4" stroke-linecap="round"/>
+  <path d="M914 338h4a10 10 0 0 1 0 20h-4" fill="none" stroke="#c8803e" stroke-width="5"/>
+  <path d="M868 328h46v28a16 16 0 0 1-16 16h-14a16 16 0 0 1-16-16z" fill="#c8803e"/>
+  <path d="M885 342l-5 6 5 6M897 342l5 6-5 6" fill="none" stroke="#fff4e4" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <g class="controle">
+    <path d="M972 330 C958 330 950 344 950 356 C950 368 960 374 970 368 L984 360 H1046 L1060 368 C1070 374 1080 368 1080 356 C1080 344 1072 330 1058 330 Z" fill="#2a2336" stroke="#4a4060" stroke-width="2"/>
+    <path d="M972 341v14M965 348h14" stroke="#cbbfe0" stroke-width="4" stroke-linecap="round"/>
+    <circle class="botao" cx="1054" cy="340" r="4" fill="#8fbfec"/>
+    <circle class="botao b2" cx="1063" cy="348" r="4" fill="#ffd95a"/>
+    <circle class="botao b3" cx="1054" cy="356" r="4" fill="#f2a7b8"/>
+    <circle class="botao b4" cx="1045" cy="348" r="4" fill="#9be0c4"/>
+    <rect x="1006" y="340" width="7" height="3" rx="1.5" fill="#6f6590"/><rect x="1017" y="340" width="7" height="3" rx="1.5" fill="#6f6590"/>
+  </g>
+  <text class="m" x="64" y="88" font-size="18" fill="#9be0c4">$ <tspan fill="#cbb9a3">whoami</tspan><tspan class="cursor" fill="#e8b47a">▋</tspan></text>
+  <text class="t" x="62" y="158" font-size="62" font-weight="800" fill="#f3e6d3" letter-spacing="-1">Cledilson <tspan fill="#e8b47a">Silva</tspan></text>
+  <text class="t cargo" x="64" y="206" font-size="27" font-weight="700" fill="#e8b47a">▸ Especialista Mobile · Flutter</text>
+  <text class="t cargo c2" x="64" y="206" font-size="27" font-weight="700" fill="#e8b47a">▸ Software Developer</text>
+  <text class="t cargo c3" x="64" y="206" font-size="27" font-weight="700" fill="#e8b47a">▸ Fundador da Unidunedev</text>
+  <text class="t cargo c4" x="64" y="206" font-size="27" font-weight="700" fill="#e8b47a">▸ Ex-militar &amp; gamer</text>
+  <text class="t" x="64" y="246" font-size="17" fill="#cbb9a3">6 anos criando apps para Android e iOS, do código até as lojas.</text>
+  <g class="chip" style="animation-delay:0.00s"><rect x="64" y="262" width="80" height="32" rx="16" fill="#e8b47a" fill-opacity=".16" stroke="#e8b47a" stroke-width="1.5"/><text class="t" x="104.0" y="283" text-anchor="middle" font-size="15" font-weight="700" fill="#f3e6d3">Dart</text></g>
+  <g class="chip" style="animation-delay:0.35s"><rect x="154" y="262" width="104" height="32" rx="16" fill="#e8b47a" fill-opacity=".16" stroke="#e8b47a" stroke-width="1.5"/><text class="t" x="206.0" y="283" text-anchor="middle" font-size="15" font-weight="700" fill="#f3e6d3">Flutter</text></g>
+  <g class="chip" style="animation-delay:0.70s"><rect x="268" y="262" width="96" height="32" rx="16" fill="#ffffff" fill-opacity=".06" stroke="#6f6590" stroke-width="1.5"/><text class="t" x="316.0" y="283" text-anchor="middle" font-size="15" font-weight="700" fill="#f3e6d3">Kotlin</text></g>
+  <g class="chip" style="animation-delay:1.05s"><rect x="374" y="262" width="84" height="32" rx="16" fill="#ffffff" fill-opacity=".06" stroke="#6f6590" stroke-width="1.5"/><text class="t" x="416.0" y="283" text-anchor="middle" font-size="15" font-weight="700" fill="#f3e6d3">Swift</text></g>
+  <g class="chip" style="animation-delay:1.40s"><rect x="468" y="262" width="78" height="32" rx="16" fill="#ffffff" fill-opacity=".06" stroke="#6f6590" stroke-width="1.5"/><text class="t" x="507.0" y="283" text-anchor="middle" font-size="15" font-weight="700" fill="#f3e6d3">Java</text></g>
+  <g class="chip" style="animation-delay:1.75s"><rect x="556" y="262" width="98" height="32" rx="16" fill="#ffffff" fill-opacity=".06" stroke="#6f6590" stroke-width="1.5"/><text class="t" x="605.0" y="283" text-anchor="middle" font-size="15" font-weight="700" fill="#f3e6d3">Python</text></g>
+  <g>
+    <circle cx="80" cy="336" r="15" fill="#e8b47a" fill-opacity=".18"/>
+    <path d="M80 327v13M74 335l6 6 6-6M73 345h14" fill="none" stroke="#e8b47a" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+    <text class="t" x="104" y="332" font-size="18" font-weight="800" fill="#f3e6d3">400 mil+ downloads</text>
+    <text class="t" x="104" y="351" font-size="13" fill="#cbb9a3">Raízes · Recomece Mulher</text>
+  </g>
+  <g>
+    <circle cx="336" cy="336" r="15" fill="#9be0c4" fill-opacity=".18"/>
+    <path d="M329 332l7-4 7 4-7 4zM331 334v5c3 3 7 3 10 0v-5" fill="none" stroke="#9be0c4" stroke-width="2.2" stroke-linejoin="round"/>
+    <text class="t" x="360" y="332" font-size="18" font-weight="800" fill="#f3e6d3">Fundador da Unidunedev</text>
+    <text class="t" x="360" y="351" font-size="13" fill="#cbb9a3">ensinando jovens a programar</text>
+  </g>
+</g>
+</svg>

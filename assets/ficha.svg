@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" width="1200" height="400" role="img" aria-label="Ficha de jogador de Cledilson: engenheiro mobile, nível 6">
+<style>
+  .t { font-family: 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+  .m { font-family: ui-monospace, 'Cascadia Code', 'SFMono-Regular', Consolas, 'Liberation Mono', monospace; }
+  .online { animation: online 1.6s ease-in-out infinite; }
+  @keyframes online { 0%, 100% { opacity: 1; } 50% { opacity: .25; } }
+  .varredura { animation: varredura 6s ease-in-out infinite; }
+  @keyframes varredura { 0% { transform: translateX(-300px); } 60%, 100% { transform: translateX(1500px); } }
+  .selo { transform-box: fill-box; transform-origin: center; animation: selo 3s ease-in-out infinite; }
+  @keyframes selo { 0%, 100% { filter: drop-shadow(0 0 0 #e8b47a); } 50% { filter: drop-shadow(0 0 10px #e8b47a); } }
+  /* barras enchendo uma vez ao abrir, uma depois da outra */
+  .barra { transform-box: fill-box; transform-origin: 0 50%; transform: scaleX(0); animation: encher 1.2s cubic-bezier(.2,.8,.2,1) forwards; }
+  @keyframes encher { to { transform: scaleX(1); } }
+  .xp { transform-box: fill-box; transform-origin: 0 50%; transform: scaleX(0); animation: encher 2s .3s cubic-bezier(.2,.8,.2,1) forwards; }
+  .trofeu { animation: trofeu 4s ease-in-out infinite; }
+  .q2 { animation-delay: 1s; } .q3 { animation-delay: 2s; } .q4 { animation-delay: 3s; }
+  @keyframes trofeu { 0%, 30%, 100% { opacity: .55; } 10%, 20% { opacity: 1; } }
+  @media (prefers-reduced-motion: reduce) { * { animation: none !important; } .barra, .xp { transform: none; } }
+</style>
+<defs>
+  <clipPath id="cartao"><rect width="1200" height="400" rx="24"/></clipPath>
+  <linearGradient id="fundo" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#14111e"/><stop offset="1" stop-color="#221a2e"/></linearGradient>
+  <linearGradient id="brilho" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".5" stop-color="#fff" stop-opacity=".06"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+  <pattern id="linhas" width="4" height="4" patternUnits="userSpaceOnUse"><rect width="4" height="1" fill="#fff" fill-opacity=".025"/></pattern>
+</defs>
+<g clip-path="url(#cartao)">
+  <rect width="1200" height="400" fill="url(#fundo)"/>
+  <rect width="1200" height="400" fill="url(#linhas)"/>
+  <rect class="varredura" x="0" y="0" width="240" height="400" fill="url(#brilho)"/>
+  <rect x="1" y="1" width="1198" height="398" rx="23" fill="none" stroke="#3d3450" stroke-width="2"/>
+
+  <text class="m" x="40" y="44" font-size="14" font-weight="700" fill="#e8b47a" letter-spacing="2">PLAYER 1 · CLEHDEV</text>
+  <circle class="online" cx="1082" cy="39" r="5" fill="#57d38c"/>
+  <text class="m" x="1096" y="44" font-size="13" font-weight="700" fill="#57d38c" letter-spacing="1.5">ONLINE</text>
+  <path d="M40 60 H1160" stroke="#3d3450" stroke-width="1.5" stroke-dasharray="4 6"/>
+
+  <!-- coluna 1: personagem -->
+  <g class="selo">
+    <path d="M140 84 L196 116 V180 L140 212 L84 180 V116 Z" fill="#2a2140" stroke="#e8b47a" stroke-width="3"/>
+    <text class="t" x="140" y="160" text-anchor="middle" font-size="40" font-weight="800" fill="#f3e6d3">CS</text>
+  </g>
+  <text class="m" x="40" y="246" font-size="12" fill="#8f86a6" letter-spacing="1.5">CLASSE</text>
+  <text class="t" x="40" y="268" font-size="20" font-weight="800" fill="#f3e6d3">Engenheiro Mobile</text>
+  <text class="m" x="40" y="298" font-size="12" fill="#8f86a6" letter-spacing="1.5">NÍVEL</text>
+  <text class="t" x="40" y="322" font-size="26" font-weight="800" fill="#e8b47a">06 <tspan font-size="15" font-weight="600" fill="#cbb9a3">anos de XP</tspan></text>
+  <rect x="40" y="334" width="250" height="10" rx="5" fill="#2d2645"/>
+  <rect class="xp" x="40" y="334" width="212" height="10" rx="5" fill="#e8b47a"/>
+  <text class="m" x="290" y="358" text-anchor="end" font-size="11" fill="#8f86a6">próximo nível: 07</text>
+
+  <!-- coluna 2: atributos -->
+  <text class="m" x="360" y="96" font-size="13" font-weight="700" fill="#8f86a6" letter-spacing="2">ATRIBUTOS</text>
+
+  <text class="t" x="360" y="128" font-size="15" font-weight="700" fill="#f3e6d3">Flutter / Dart</text>
+  <text class="m" x="720" y="128" text-anchor="end" font-size="14" font-weight="700" fill="#e8b47a">96</text>
+  <rect x="360" y="136" width="360" height="9" rx="4.5" fill="#2d2645"/>
+  <rect class="barra" x="360" y="136" width="346" height="9" rx="4.5" fill="#e8b47a" style="animation-delay:0.20s"/>
+  <text class="t" x="360" y="168" font-size="15" font-weight="700" fill="#f3e6d3">Arquitetura (Clean Arch)</text>
+  <text class="m" x="720" y="168" text-anchor="end" font-size="14" font-weight="700" fill="#c9b8ff">88</text>
+  <rect x="360" y="176" width="360" height="9" rx="4.5" fill="#2d2645"/>
+  <rect class="barra" x="360" y="176" width="317" height="9" rx="4.5" fill="#c9b8ff" style="animation-delay:0.38s"/>
+  <text class="t" x="360" y="208" font-size="15" font-weight="700" fill="#f3e6d3">Kotlin</text>
+  <text class="m" x="720" y="208" text-anchor="end" font-size="14" font-weight="700" fill="#b18cff">72</text>
+  <rect x="360" y="216" width="360" height="9" rx="4.5" fill="#2d2645"/>
+  <rect class="barra" x="360" y="216" width="259" height="9" rx="4.5" fill="#b18cff" style="animation-delay:0.56s"/>
+  <text class="t" x="360" y="248" font-size="15" font-weight="700" fill="#f3e6d3">Java</text>
+  <text class="m" x="720" y="248" text-anchor="end" font-size="14" font-weight="700" fill="#ffad66">70</text>
+  <rect x="360" y="256" width="360" height="9" rx="4.5" fill="#2d2645"/>
+  <rect class="barra" x="360" y="256" width="252" height="9" rx="4.5" fill="#ffad66" style="animation-delay:0.74s"/>
+  <text class="t" x="360" y="288" font-size="15" font-weight="700" fill="#f3e6d3">Swift</text>
+  <text class="m" x="720" y="288" text-anchor="end" font-size="14" font-weight="700" fill="#ff8f6b">66</text>
+  <rect x="360" y="296" width="360" height="9" rx="4.5" fill="#2d2645"/>
+  <rect class="barra" x="360" y="296" width="238" height="9" rx="4.5" fill="#ff8f6b" style="animation-delay:0.92s"/>
+  <text class="t" x="360" y="328" font-size="15" font-weight="700" fill="#f3e6d3">Python</text>
+  <text class="m" x="720" y="328" text-anchor="end" font-size="14" font-weight="700" fill="#8fbfec">60</text>
+  <rect x="360" y="336" width="360" height="9" rx="4.5" fill="#2d2645"/>
+  <rect class="barra" x="360" y="336" width="216" height="9" rx="4.5" fill="#8fbfec" style="animation-delay:1.10s"/>
+
+  <!-- coluna 3: conquistas -->
+  <text class="m" x="780" y="96" font-size="13" font-weight="700" fill="#8f86a6" letter-spacing="2">CONQUISTAS DESBLOQUEADAS</text>
+  <g>
+    <rect x="780" y="116" width="380" height="52" rx="12" fill="#ffffff" fill-opacity=".035" stroke="#3d3450"/>
+    <g class="trofeu">
+      <circle cx="808" cy="142" r="16" fill="#e8b47a" fill-opacity=".16"/>
+      <path d="M800 133 h16 v5 a8 8 0 0 1 -16 0 z M804 149 h8 M808 146 v3 M800 135 h-4 a4 4 0 0 0 4 6 M816 135 h4 a4 4 0 0 1 -4 6" fill="none" stroke="#e8b47a" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+    <text class="t" x="836" y="139" font-size="16" font-weight="800" fill="#f3e6d3">400 mil+ downloads</text>
+    <text class="t" x="836" y="157" font-size="13" fill="#cbb9a3">Raízes · Recomece Mulher</text>
+  </g>
+  <g>
+    <rect x="780" y="178" width="380" height="52" rx="12" fill="#ffffff" fill-opacity=".035" stroke="#3d3450"/>
+    <g class="trofeu q2">
+      <circle cx="808" cy="204" r="16" fill="#9be0c4" fill-opacity=".16"/>
+      <path d="M800 195 h16 v5 a8 8 0 0 1 -16 0 z M804 211 h8 M808 208 v3 M800 197 h-4 a4 4 0 0 0 4 6 M816 197 h4 a4 4 0 0 1 -4 6" fill="none" stroke="#9be0c4" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+    <text class="t" x="836" y="201" font-size="16" font-weight="800" fill="#f3e6d3">Fundador</text>
+    <text class="t" x="836" y="219" font-size="13" fill="#cbb9a3">Unidunedev · comunidade dev</text>
+  </g>
+  <g>
+    <rect x="780" y="240" width="380" height="52" rx="12" fill="#ffffff" fill-opacity=".035" stroke="#3d3450"/>
+    <g class="trofeu q3">
+      <circle cx="808" cy="266" r="16" fill="#8fbfec" fill-opacity=".16"/>
+      <path d="M800 257 h16 v5 a8 8 0 0 1 -16 0 z M804 273 h8 M808 270 v3 M800 259 h-4 a4 4 0 0 0 4 6 M816 259 h4 a4 4 0 0 1 -4 6" fill="none" stroke="#8fbfec" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+    <text class="t" x="836" y="263" font-size="16" font-weight="800" fill="#f3e6d3">Missão cumprida</text>
+    <text class="t" x="836" y="281" font-size="13" fill="#cbb9a3">Ex-militar · disciplina e foco</text>
+  </g>
+  <g>
+    <rect x="780" y="302" width="380" height="52" rx="12" fill="#ffffff" fill-opacity=".035" stroke="#3d3450"/>
+    <g class="trofeu q4">
+      <circle cx="808" cy="328" r="16" fill="#f2a7b8" fill-opacity=".16"/>
+      <path d="M800 319 h16 v5 a8 8 0 0 1 -16 0 z M804 335 h8 M808 332 v3 M800 321 h-4 a4 4 0 0 0 4 6 M816 321 h4 a4 4 0 0 1 -4 6" fill="none" stroke="#f2a7b8" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+    <text class="t" x="836" y="325" font-size="16" font-weight="800" fill="#f3e6d3">Cross-platform</text>
+    <text class="t" x="836" y="343" font-size="13" fill="#cbb9a3">Apps nas lojas Android e iOS</text>
+  </g>
+  <text class="m" x="360" y="384" font-size="12" fill="#8f86a6">STATUS ATUAL ▸ <tspan fill="#9be0c4">construindo apps e ensinando a próxima geração de devs</tspan></text>
+</g>
+</svg>

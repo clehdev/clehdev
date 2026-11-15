@@ -1,68 +1,70 @@
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+<p align="center">
+  <img src="assets/capa.svg" alt="Cledilson Silva: Software Developer, especialista mobile com Flutter" width="100%">
+</p>
 
-# Olá 👨‍💻
+### 👋 Oi, eu sou o Cledilson
 
-![gif](https://github.com/cledilsonwisp/imagens/blob/main/cledilson-readme-gif.gif)
+Desenvolvedor de software há **6 anos**, especialista em **mobile com Flutter**. Crio apps para Android e iOS do primeiro commit até a publicação nas lojas, com arquitetura limpa e foco em quem vai usar. Também tenho **Kotlin, Swift, Java e Python** na bagagem.
 
-### Seja bem-vindo ao meu perfil GitHub. <img src="https://raw.githubusercontent.com/MicaelliMedeiros/micaellimedeiros/master/image/computer-illustration.png" alt="ilustração de um computador" min-width="200px" max-width="200px" width="200px" align="right">
+- 📱 Fundador da **Recomece Mulher**, empresa de apps de cuidados pessoais femininos. O **Raízes** já passou de **400 mil downloads**.
+- ☕ Criei a **[Unidunedev](https://github.com/unidunedev)**, uma comunidade para jovens aprenderem programação, Git e trabalho em equipe na prática.
+- 🪖 Ex-militar: disciplina, foco e missão dada é missão cumprida.
+- 🎮 Gamer nas horas vagas.
 
+<p align="center">
+  <img src="assets/ficha.svg" alt="Ficha de jogador: classe Engenheiro Mobile, nível 6, atributos e conquistas" width="100%">
+</p>
 
-#### 🌍 "Me tornando um profissional melhor a cada dia!" 🧠
-- ✨ Sou da Bahia, Brasil
-- ⚡ Apaixonado Tecnologia, dublagem e games.
+### 🚀 Projetos em destaque
 
-##
+| Projeto | O que é |
+| --- | --- |
+| **Recomece Mulher** | Apps de cuidados pessoais femininos. O **Raízes** tem mais de 400 mil downloads. [Ver na Google Play ↗](https://play.google.com/store/apps/details?id=company.mms2.empoderamentoblackpower) |
+| **[Unidunedev](https://github.com/unidunedev)** | Comunidade dev universitária: [onboarding](https://onboarding.unidunedev.workers.dev) com mural via Pull Request e [site de estudos](https://estudos.unidunedev.workers.dev) com trilhas de lógica, linguagens e profissões. |
+| **Help Entregas** | Apps de entrega em Flutter: o app de quem pede e o app do entregador. |
 
-#### Estou aprendendo sobre:
-[<img height="48px" width="48px" alt="Icone Swift" src="https://skillicons.dev/icons?i=swift"/>](https://www.swift.org/)
-[<img height="48px" width="48px" alt="Icone Kotlin" src="https://skillicons.dev/icons?i=kotlin"/>](https://kotlinlang.org/)
-[<img height="48px" width="48px" alt="Icone Java Script" src="https://skillicons.dev/icons?i=js"/>](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
+### 🧰 Ferramentas
 
-##
+<p>
+  <img src="https://img.shields.io/badge/Flutter-2a2140?style=for-the-badge&logo=flutter&logoColor=e8b47a" alt="Flutter">
+  <img src="https://img.shields.io/badge/Dart-2a2140?style=for-the-badge&logo=dart&logoColor=e8b47a" alt="Dart">
+  <img src="https://img.shields.io/badge/Kotlin-2a2140?style=for-the-badge&logo=kotlin&logoColor=e8b47a" alt="Kotlin">
+  <img src="https://img.shields.io/badge/Swift-2a2140?style=for-the-badge&logo=swift&logoColor=e8b47a" alt="Swift">
+  <img src="https://img.shields.io/badge/Java-2a2140?style=for-the-badge&logo=openjdk&logoColor=e8b47a" alt="Java">
+  <img src="https://img.shields.io/badge/Python-2a2140?style=for-the-badge&logo=python&logoColor=e8b47a" alt="Python">
+  <img src="https://img.shields.io/badge/Firebase-2a2140?style=for-the-badge&logo=firebase&logoColor=e8b47a" alt="Firebase">
+  <img src="https://img.shields.io/badge/Xcode-2a2140?style=for-the-badge&logo=xcode&logoColor=e8b47a" alt="Xcode">
+  <img src="https://img.shields.io/badge/Android_Studio-2a2140?style=for-the-badge&logo=androidstudio&logoColor=e8b47a" alt="Android Studio">
+  <img src="https://img.shields.io/badge/Git-2a2140?style=for-the-badge&logo=git&logoColor=e8b47a" alt="Git">
+  <img src="https://img.shields.io/badge/Figma-2a2140?style=for-the-badge&logo=figma&logoColor=e8b47a" alt="Figma">
+</p>
 
-#### Ferramentas que uso:
-[<img height="48px" width="48px" alt="Icone VS-Code" src="https://skillicons.dev/icons?i=vscode"/>](https://code.visualstudio.com)
-[<img height="48px" width="48px" alt="Icone Insomnia" src="https://i.postimg.cc/MHch4m7T/insomnia.png"/>](https://insomnia.rest)
-[<img height="48px" width="48px" alt="Icone Postman" src="https://i.postimg.cc/QNyBTNVk/postman.png"/>](https://www.postman.com)
-[<img height="48px" width="48px" alt="Icone GitHub" src="https://skillicons.dev/icons?i=github"/>](https://github.com/)
-[<img height="48px" width="48px" alt="Icone Git" src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/Git.svg"/>](https://git-scm.com)
+### 🐍 A cobrinha comendo meus commits
 
-##
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/clehdev/clehdev/output/snake-escuro.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/clehdev/clehdev/output/snake-claro.svg">
+  <img alt="Uma cobrinha percorrendo o gráfico de contribuições" src="https://raw.githubusercontent.com/clehdev/clehdev/output/snake-claro.svg" width="100%">
+</picture>
 
-#### Como entrar em contato comigo:
-[<img alt="Linkedin" src="https://img.shields.io/badge/-linkedin-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white"/>](https://www.linkedin.com/in/cledilson-programador/)
-[<img alt="G-Mail da Google" src="https://img.shields.io/badge/mail-FFFFFF?style=for-the-badge&logo=google&logoColor=black"/>](mailto:cavbrcleg@gmail.com)
+### 📫 Bora conversar?
 
-##
+<p>
+  <a href="https://www.linkedin.com/in/cledilson-programador"><img src="https://img.shields.io/badge/LinkedIn-2a2140?style=for-the-badge&logo=linkedin&logoColor=e8b47a" alt="LinkedIn"></a>
+  <a href="https://www.instagram.com/clehwisp__"><img src="https://img.shields.io/badge/Instagram-2a2140?style=for-the-badge&logo=instagram&logoColor=e8b47a" alt="Instagram"></a>
+  <a href="https://github.com/unidunedev"><img src="https://img.shields.io/badge/Unidunedev-2a2140?style=for-the-badge&logo=github&logoColor=e8b47a" alt="Unidunedev"></a>
+</p>
 
-#### Experiência Profissional:
-Na visão geral abaixo você encontrará minha experiências de trabalho mais recente:
+<details>
+<summary>🇺🇸 <b>English</b></summary>
+<br>
 
-[<img align="left" height="94px" width="94px" alt="Warpnet" src="https://i.postimg.cc/V0spr3ZW/luby-logo.jpg"/>](https://www.luby.com.br/)
-**Luby Software** 
-<br/> 
+Hi! I'm **Cledilson**, a software developer with **6 years of experience**, specialized in **mobile development with Flutter** (Android and iOS), also working with Kotlin, Swift, Java and Python.
 
-[**Help Entrega**](https://helpentregas.com.br/) • Full-time \
-Competências: `Angular (Framework)`, `Google Maps`, `Firebase`, `Flutter`, `Geolocalização`, `MVC`, 
-<br/> `Socket.io`, `Firebae`, `API REST`
-<br/>
-<br/>
-No projeto Help Entregas, um aplicativo de delivery voltado para entregadores, atuei no desenvolvimento mobile com Flutter utilizando socket IO em Java nativo para comunicação em tempo real entre estabelecimentos e entregadores.
+- Founder of **Recomece Mulher**, a company of personal care apps for women. Our app **Raízes** has over **400k downloads**.
+- Creator of **[Unidunedev](https://github.com/unidunedev)**, a community that helps young people learn programming, Git and teamwork by building real projects.
+- Former military (discipline and focus) and a gamer at heart.
 
-##
+</details>
 
-[**Nido**](https://nido.app.br/wpsite/) • Full-time \
-Competências: `GitFlow`, `JIRA`, `Firebase`, `GitHub `, `Git`, `MVC`, `API REST` 
-<br/>
-<br/>
-No projeto Nido, um aplicativo de bem-estar e saúde para facilitar o encontro de pessoas e profissionais, fui responsável pelo desenvolvimento. Realizei a migração do projeto para o null-safety do Flutter, realizei manutenções e apliquei melhorias tanto na interface do usuário quanto nas regras de negócios.
-<br/>
-<br/>
-Por favor, encontre-me no [LinkedIn](https://www.linkedin.com/in/cledilson-programador/) para uma descrição mais detalhada da minha experiência de trabalho, educação e certificação.
-
-##
-
-#### Estatísticas:
-[<img height="180px" alt="GitHub Statistics" src="https://github-readme-stats.vercel.app/api/top-langs/?username=cledilsonwisp&layout=compact&langs_count=7&theme=radical"/>](https://github.com/)
-[<img height="180px" alt="GitHub Statistics" src="https://github-readme-stats.vercel.app/api/?username=cledilsonwisp&show_icons=true&include_all_commits=true&theme=radical"/>](https://github.com/)
-[<img height="153px" alt="GitHub Statistics" src="http://github-readme-streak-stats.herokuapp.com/?user=cledilsonwisp&amp;theme=radical"/>](https://github.com/)
+<p align="center"><sub>Capa e ficha animadas feitas à mão em SVG + CSS · com café ☕</sub></p>
