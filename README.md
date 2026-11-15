@@ -12,7 +12,7 @@ Desenvolvedor de software há **6 anos**, especialista em **mobile com Flutter**
 - 🎮 Gamer nas horas vagas.
 
 <p align="center">
-  <img src="assets/ficha.svg" alt="Projetos e linguagens: Recomece Mulher, Unidunedev, Help Entregas; Flutter, Kotlin, Swift, Java e Python" width="100%">
+  <img src="assets/ficha-v2.svg" alt="Projetos e linguagens: Recomece Mulher, Unidunedev, Help Entregas; Flutter, Kotlin, Swift, Java e Python" width="100%">
 </p>
 
 ### 🚀 Projetos em destaque
