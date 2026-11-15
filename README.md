@@ -51,7 +51,7 @@ Desenvolvedor de software há **6 anos**, especialista em **mobile com Flutter**
 
 <p>
   <a href="https://www.linkedin.com/in/cledilson-programador"><img src="https://img.shields.io/badge/LinkedIn-2a2140?style=for-the-badge&logo=linkedin&logoColor=e8b47a" alt="LinkedIn"></a>
-  <a href="https://www.instagram.com/clehwisp__"><img src="https://img.shields.io/badge/Instagram-2a2140?style=for-the-badge&logo=instagram&logoColor=e8b47a" alt="Instagram"></a>
+  <a href="https://www.instagram.com/cleh.dev"><img src="https://img.shields.io/badge/Instagram-2a2140?style=for-the-badge&logo=instagram&logoColor=e8b47a" alt="Instagram"></a>
   <a href="https://recomecemulher.com/"><img src="https://img.shields.io/badge/Recomece_Mulher-2a2140?style=for-the-badge&logo=googlechrome&logoColor=e8b47a" alt="Recomece Mulher"></a>
   <a href="https://github.com/unidunedev"><img src="https://img.shields.io/badge/Unidunedev-2a2140?style=for-the-badge&logo=github&logoColor=e8b47a" alt="Unidunedev"></a>
 </p>
