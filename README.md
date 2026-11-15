@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/capa.svg" alt="Cledilson Silva: Software Developer, especialista mobile com Flutter" width="100%">
+  <img src="assets/capa-foto.svg" alt="Cledilson Silva: Software Developer, especialista mobile com Flutter" width="100%">
 </p>
 
 ### 👋 Oi, eu sou o Cledilson
