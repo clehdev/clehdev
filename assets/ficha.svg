@@ -1,118 +1,90 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" width="1200" height="400" role="img" aria-label="Ficha de jogador de Cledilson: engenheiro mobile, nível 6">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 380" width="1200" height="380" role="img" aria-label="Projetos e linguagens de Cledilson Silva" xmlns:c2pa="http://c2pa.org/manifest">
 <style>
   .t { font-family: 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
   .m { font-family: ui-monospace, 'Cascadia Code', 'SFMono-Regular', Consolas, 'Liberation Mono', monospace; }
-  .online { animation: online 1.6s ease-in-out infinite; }
-  @keyframes online { 0%, 100% { opacity: 1; } 50% { opacity: .25; } }
-  .varredura { animation: varredura 6s ease-in-out infinite; }
-  @keyframes varredura { 0% { transform: translateX(-300px); } 60%, 100% { transform: translateX(1500px); } }
-  .selo { transform-box: fill-box; transform-origin: center; animation: selo 3s ease-in-out infinite; }
-  @keyframes selo { 0%, 100% { filter: drop-shadow(0 0 0 #e8b47a); } 50% { filter: drop-shadow(0 0 10px #e8b47a); } }
-  /* barras enchendo uma vez ao abrir, uma depois da outra */
-  .barra { transform-box: fill-box; transform-origin: 0 50%; transform: scaleX(0); animation: encher 1.2s cubic-bezier(.2,.8,.2,1) forwards; }
-  @keyframes encher { to { transform: scaleX(1); } }
-  .xp { transform-box: fill-box; transform-origin: 0 50%; transform: scaleX(0); animation: encher 2s .3s cubic-bezier(.2,.8,.2,1) forwards; }
-  .trofeu { animation: trofeu 4s ease-in-out infinite; }
-  .q2 { animation-delay: 1s; } .q3 { animation-delay: 2s; } .q4 { animation-delay: 3s; }
-  @keyframes trofeu { 0%, 30%, 100% { opacity: .55; } 10%, 20% { opacity: 1; } }
-  @media (prefers-reduced-motion: reduce) { * { animation: none !important; } .barra, .xp { transform: none; } }
+  .cursor { animation: piscar 1s steps(1) infinite; }
+  @keyframes piscar { 0%, 49% { opacity: 1; } 50%, 100% { opacity: 0; } }
+  .entra { opacity: 0; animation: entrar .9s ease-out forwards; }
+  @keyframes entrar { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+  .barra { transform-box: fill-box; transform-origin: 0 50%; transform: scaleX(0); animation: crescer 1.3s cubic-bezier(.2,.8,.2,1) forwards; }
+  @keyframes crescer { to { transform: scaleX(1); } }
+  .luz { animation: luz 8s ease-in-out infinite alternate; }
+  @keyframes luz { from { opacity: .5; transform: translateX(0); } to { opacity: 1; transform: translateX(80px); } }
+  .vivo { animation: vivo 2s ease-in-out infinite; }
+  @keyframes vivo { 0%, 100% { opacity: 1; } 50% { opacity: .3; } }
+  @media (prefers-reduced-motion: reduce) { * { animation: none !important; } .entra { opacity: 1; } .barra { transform: none; } }
 </style>
 <defs>
-  <clipPath id="cartao"><rect width="1200" height="400" rx="24"/></clipPath>
-  <linearGradient id="fundo" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#14111e"/><stop offset="1" stop-color="#221a2e"/></linearGradient>
-  <linearGradient id="brilho" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".5" stop-color="#fff" stop-opacity=".06"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
-  <pattern id="linhas" width="4" height="4" patternUnits="userSpaceOnUse"><rect width="4" height="1" fill="#fff" fill-opacity=".025"/></pattern>
+  <clipPath id="cartao"><rect width="1200" height="380" rx="24"/></clipPath>
+  <linearGradient id="fundo" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#120f12"/><stop offset=".6" stop-color="#1a1819"/><stop offset="1" stop-color="#2b2b2c"/>
+  </linearGradient>
+  <radialGradient id="quente" cx=".5" cy=".5" r=".5">
+    <stop offset="0" stop-color="#e8b47a" stop-opacity=".14"/><stop offset="1" stop-color="#e8b47a" stop-opacity="0"/>
+  </radialGradient>
 </defs>
 <g clip-path="url(#cartao)">
-  <rect width="1200" height="400" fill="url(#fundo)"/>
-  <rect width="1200" height="400" fill="url(#linhas)"/>
-  <rect class="varredura" x="0" y="0" width="240" height="400" fill="url(#brilho)"/>
-  <rect x="1" y="1" width="1198" height="398" rx="23" fill="none" stroke="#3d3450" stroke-width="2"/>
+  <rect width="1200" height="380" fill="url(#fundo)"/>
+  <circle class="luz" cx="260" cy="190" r="340" fill="url(#quente)"/>
 
-  <text class="m" x="40" y="44" font-size="14" font-weight="700" fill="#e8b47a" letter-spacing="2">PLAYER 1 · CLEHDEV</text>
-  <circle class="online" cx="1082" cy="39" r="5" fill="#57d38c"/>
-  <text class="m" x="1096" y="44" font-size="13" font-weight="700" fill="#57d38c" letter-spacing="1.5">ONLINE</text>
-  <path d="M40 60 H1160" stroke="#3d3450" stroke-width="1.5" stroke-dasharray="4 6"/>
+  <text class="m entra" x="56" y="62" font-size="15" fill="#a99a8c">~/clehdev <tspan fill="#9be0c4">$</tspan> ls projetos/</text>
 
-  <!-- coluna 1: personagem -->
-  <g class="selo">
-    <path d="M140 84 L196 116 V180 L140 212 L84 180 V116 Z" fill="#2a2140" stroke="#e8b47a" stroke-width="3"/>
-    <text class="t" x="140" y="160" text-anchor="middle" font-size="40" font-weight="800" fill="#f3e6d3">CS</text>
+  <g class="entra" style="animation-delay:0.15s">
+    <rect x="56" y="104" width="4" height="56" rx="2" fill="#e8b47a"/>
+    <text class="t" x="78" y="124" font-size="22" font-weight="800" fill="#f3e6d3">Recomece Mulher</text>
+    <text class="t" x="78" y="145" font-size="15" fill="#cbb9a3">Apps de cuidados pessoais femininos</text>
+    <text class="m" x="78" y="162" font-size="12.5" fill="#e8b47a">Raízes · 400 mil+ downloads</text>
   </g>
-  <text class="m" x="40" y="246" font-size="12" fill="#8f86a6" letter-spacing="1.5">CLASSE</text>
-  <text class="t" x="40" y="268" font-size="20" font-weight="800" fill="#f3e6d3">Engenheiro Mobile</text>
-  <text class="m" x="40" y="298" font-size="12" fill="#8f86a6" letter-spacing="1.5">NÍVEL</text>
-  <text class="t" x="40" y="322" font-size="26" font-weight="800" fill="#e8b47a">06 <tspan font-size="15" font-weight="600" fill="#cbb9a3">anos de XP</tspan></text>
-  <rect x="40" y="334" width="250" height="10" rx="5" fill="#2d2645"/>
-  <rect class="xp" x="40" y="334" width="212" height="10" rx="5" fill="#e8b47a"/>
-  <text class="m" x="290" y="358" text-anchor="end" font-size="11" fill="#8f86a6">próximo nível: 07</text>
+  <g class="entra" style="animation-delay:0.33s">
+    <rect x="56" y="188" width="4" height="56" rx="2" fill="#9be0c4"/>
+    <text class="t" x="78" y="208" font-size="22" font-weight="800" fill="#f3e6d3">Unidunedev</text>
+    <text class="t" x="78" y="229" font-size="15" fill="#cbb9a3">Comunidade para jovens aprenderem a programar</text>
+    <text class="m" x="78" y="246" font-size="12.5" fill="#9be0c4">onboarding · estudos · mural via PR</text>
+  </g>
+  <g class="entra" style="animation-delay:0.51s">
+    <rect x="56" y="272" width="4" height="56" rx="2" fill="#8fbfec"/>
+    <text class="t" x="78" y="292" font-size="22" font-weight="800" fill="#f3e6d3">Help Entregas</text>
+    <text class="t" x="78" y="313" font-size="15" fill="#cbb9a3">Apps de entrega em Flutter</text>
+    <text class="m" x="78" y="330" font-size="12.5" fill="#8fbfec">app do cliente · app do entregador</text>
+  </g>
 
-  <!-- coluna 2: atributos -->
-  <text class="m" x="360" y="96" font-size="13" font-weight="700" fill="#8f86a6" letter-spacing="2">ATRIBUTOS</text>
+  <rect x="640" y="56" width="1" height="268" fill="#ffffff" fill-opacity=".08"/>
+  <text class="m entra" x="690" y="62" font-size="15" fill="#a99a8c" style="animation-delay:.2s">~/clehdev <tspan fill="#9be0c4">$</tspan> cat linguagens.txt</text>
+  <g class="entra" style="animation-delay:0.30s">
+    <text class="t" x="690" y="108" font-size="16" font-weight="700" fill="#f3e6d3">Flutter / Dart</text>
+    <text class="t" x="1140" y="108" text-anchor="end" font-size="13" fill="#a99a8c">principal</text>
+    <rect x="690" y="118" width="450" height="3" rx="1.5" fill="#ffffff" fill-opacity=".08"/>
+    <rect class="barra" x="690" y="118" width="450" height="3" rx="1.5" fill="#e8b47a" style="animation-delay:0.50s"/>
+  </g>
+  <g class="entra" style="animation-delay:0.42s">
+    <text class="t" x="690" y="154" font-size="16" font-weight="700" fill="#f3e6d3">Kotlin</text>
+    <text class="t" x="1140" y="154" text-anchor="end" font-size="13" fill="#a99a8c">Android nativo</text>
+    <rect x="690" y="164" width="450" height="3" rx="1.5" fill="#ffffff" fill-opacity=".08"/>
+    <rect class="barra" x="690" y="164" width="333" height="3" rx="1.5" fill="#b18cff" style="animation-delay:0.65s"/>
+  </g>
+  <g class="entra" style="animation-delay:0.54s">
+    <text class="t" x="690" y="200" font-size="16" font-weight="700" fill="#f3e6d3">Swift</text>
+    <text class="t" x="1140" y="200" text-anchor="end" font-size="13" fill="#a99a8c">iOS nativo</text>
+    <rect x="690" y="210" width="450" height="3" rx="1.5" fill="#ffffff" fill-opacity=".08"/>
+    <rect class="barra" x="690" y="210" width="306" height="3" rx="1.5" fill="#ff8f6b" style="animation-delay:0.80s"/>
+  </g>
+  <g class="entra" style="animation-delay:0.66s">
+    <text class="t" x="690" y="246" font-size="16" font-weight="700" fill="#f3e6d3">Java</text>
+    <text class="t" x="1140" y="246" text-anchor="end" font-size="13" fill="#a99a8c">back-end e Android</text>
+    <rect x="690" y="256" width="450" height="3" rx="1.5" fill="#ffffff" fill-opacity=".08"/>
+    <rect class="barra" x="690" y="256" width="315" height="3" rx="1.5" fill="#ffad66" style="animation-delay:0.95s"/>
+  </g>
+  <g class="entra" style="animation-delay:0.78s">
+    <text class="t" x="690" y="292" font-size="16" font-weight="700" fill="#f3e6d3">Python</text>
+    <text class="t" x="1140" y="292" text-anchor="end" font-size="13" fill="#a99a8c">automação e scripts</text>
+    <rect x="690" y="302" width="450" height="3" rx="1.5" fill="#ffffff" fill-opacity=".08"/>
+    <rect class="barra" x="690" y="302" width="261" height="3" rx="1.5" fill="#8fbfec" style="animation-delay:1.10s"/>
+  </g>
 
-  <text class="t" x="360" y="128" font-size="15" font-weight="700" fill="#f3e6d3">Flutter / Dart</text>
-  <text class="m" x="720" y="128" text-anchor="end" font-size="14" font-weight="700" fill="#e8b47a">96</text>
-  <rect x="360" y="136" width="360" height="9" rx="4.5" fill="#2d2645"/>
-  <rect class="barra" x="360" y="136" width="346" height="9" rx="4.5" fill="#e8b47a" style="animation-delay:0.20s"/>
-  <text class="t" x="360" y="168" font-size="15" font-weight="700" fill="#f3e6d3">Arquitetura (Clean Arch)</text>
-  <text class="m" x="720" y="168" text-anchor="end" font-size="14" font-weight="700" fill="#c9b8ff">88</text>
-  <rect x="360" y="176" width="360" height="9" rx="4.5" fill="#2d2645"/>
-  <rect class="barra" x="360" y="176" width="317" height="9" rx="4.5" fill="#c9b8ff" style="animation-delay:0.38s"/>
-  <text class="t" x="360" y="208" font-size="15" font-weight="700" fill="#f3e6d3">Kotlin</text>
-  <text class="m" x="720" y="208" text-anchor="end" font-size="14" font-weight="700" fill="#b18cff">72</text>
-  <rect x="360" y="216" width="360" height="9" rx="4.5" fill="#2d2645"/>
-  <rect class="barra" x="360" y="216" width="259" height="9" rx="4.5" fill="#b18cff" style="animation-delay:0.56s"/>
-  <text class="t" x="360" y="248" font-size="15" font-weight="700" fill="#f3e6d3">Java</text>
-  <text class="m" x="720" y="248" text-anchor="end" font-size="14" font-weight="700" fill="#ffad66">70</text>
-  <rect x="360" y="256" width="360" height="9" rx="4.5" fill="#2d2645"/>
-  <rect class="barra" x="360" y="256" width="252" height="9" rx="4.5" fill="#ffad66" style="animation-delay:0.74s"/>
-  <text class="t" x="360" y="288" font-size="15" font-weight="700" fill="#f3e6d3">Swift</text>
-  <text class="m" x="720" y="288" text-anchor="end" font-size="14" font-weight="700" fill="#ff8f6b">66</text>
-  <rect x="360" y="296" width="360" height="9" rx="4.5" fill="#2d2645"/>
-  <rect class="barra" x="360" y="296" width="238" height="9" rx="4.5" fill="#ff8f6b" style="animation-delay:0.92s"/>
-  <text class="t" x="360" y="328" font-size="15" font-weight="700" fill="#f3e6d3">Python</text>
-  <text class="m" x="720" y="328" text-anchor="end" font-size="14" font-weight="700" fill="#8fbfec">60</text>
-  <rect x="360" y="336" width="360" height="9" rx="4.5" fill="#2d2645"/>
-  <rect class="barra" x="360" y="336" width="216" height="9" rx="4.5" fill="#8fbfec" style="animation-delay:1.10s"/>
-
-  <!-- coluna 3: conquistas -->
-  <text class="m" x="780" y="96" font-size="13" font-weight="700" fill="#8f86a6" letter-spacing="2">CONQUISTAS DESBLOQUEADAS</text>
-  <g>
-    <rect x="780" y="116" width="380" height="52" rx="12" fill="#ffffff" fill-opacity=".035" stroke="#3d3450"/>
-    <g class="trofeu">
-      <circle cx="808" cy="142" r="16" fill="#e8b47a" fill-opacity=".16"/>
-      <path d="M800 133 h16 v5 a8 8 0 0 1 -16 0 z M804 149 h8 M808 146 v3 M800 135 h-4 a4 4 0 0 0 4 6 M816 135 h4 a4 4 0 0 1 -4 6" fill="none" stroke="#e8b47a" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
-    </g>
-    <text class="t" x="836" y="139" font-size="16" font-weight="800" fill="#f3e6d3">400 mil+ downloads</text>
-    <text class="t" x="836" y="157" font-size="13" fill="#cbb9a3">Raízes · Recomece Mulher</text>
+  <g class="entra" style="animation-delay:.9s">
+    <circle class="vivo" cx="696" cy="345" r="4" fill="#57d38c"/>
+    <text class="m" x="710" y="349" font-size="13" fill="#a99a8c">agora: construindo apps e formando novos devs<tspan class="cursor" fill="#e8b47a">_</tspan></text>
   </g>
-  <g>
-    <rect x="780" y="178" width="380" height="52" rx="12" fill="#ffffff" fill-opacity=".035" stroke="#3d3450"/>
-    <g class="trofeu q2">
-      <circle cx="808" cy="204" r="16" fill="#9be0c4" fill-opacity=".16"/>
-      <path d="M800 195 h16 v5 a8 8 0 0 1 -16 0 z M804 211 h8 M808 208 v3 M800 197 h-4 a4 4 0 0 0 4 6 M816 197 h4 a4 4 0 0 1 -4 6" fill="none" stroke="#9be0c4" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
-    </g>
-    <text class="t" x="836" y="201" font-size="16" font-weight="800" fill="#f3e6d3">Fundador</text>
-    <text class="t" x="836" y="219" font-size="13" fill="#cbb9a3">Unidunedev · comunidade dev</text>
-  </g>
-  <g>
-    <rect x="780" y="240" width="380" height="52" rx="12" fill="#ffffff" fill-opacity=".035" stroke="#3d3450"/>
-    <g class="trofeu q3">
-      <circle cx="808" cy="266" r="16" fill="#8fbfec" fill-opacity=".16"/>
-      <path d="M800 257 h16 v5 a8 8 0 0 1 -16 0 z M804 273 h8 M808 270 v3 M800 259 h-4 a4 4 0 0 0 4 6 M816 259 h4 a4 4 0 0 1 -4 6" fill="none" stroke="#8fbfec" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
-    </g>
-    <text class="t" x="836" y="263" font-size="16" font-weight="800" fill="#f3e6d3">Missão cumprida</text>
-    <text class="t" x="836" y="281" font-size="13" fill="#cbb9a3">Ex-militar · disciplina e foco</text>
-  </g>
-  <g>
-    <rect x="780" y="302" width="380" height="52" rx="12" fill="#ffffff" fill-opacity=".035" stroke="#3d3450"/>
-    <g class="trofeu q4">
-      <circle cx="808" cy="328" r="16" fill="#f2a7b8" fill-opacity=".16"/>
-      <path d="M800 319 h16 v5 a8 8 0 0 1 -16 0 z M804 335 h8 M808 332 v3 M800 321 h-4 a4 4 0 0 0 4 6 M816 321 h4 a4 4 0 0 1 -4 6" fill="none" stroke="#f2a7b8" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
-    </g>
-    <text class="t" x="836" y="325" font-size="16" font-weight="800" fill="#f3e6d3">Cross-platform</text>
-    <text class="t" x="836" y="343" font-size="13" fill="#cbb9a3">Apps nas lojas Android e iOS</text>
-  </g>
-  <text class="m" x="360" y="384" font-size="12" fill="#8f86a6">STATUS ATUAL ▸ <tspan fill="#9be0c4">construindo apps e ensinando a próxima geração de devs</tspan></text>
+  <rect x="1" y="1" width="1198" height="378" rx="23" fill="none" stroke="#ffffff" stroke-opacity=".06" stroke-width="2"/>
 </g>
-</svg>
+<metadata><c2pa:manifest>AAAWgmp1bWIAAAAeanVtZGMycGEAEQAQgAAAqgA4m3EDYzJwYQAAABZcanVtYgAAAEdqdW1kYzJtYQARABCAAACqADibcQN1cm46YzJwYTo3YmEyZWJhZC1jODRjLTQ3ZTktOWU3Zi0yYTg0MGMzNmIwOGMAAAADl2p1bWIAAAApanVtZGMyYXMAEQAQgAAAqgA4m3EDYzJwYS5hc3NlcnRpb25zAAAAALxqdW1iAAAARGp1bWRjYm9yABEAEIAAAKoAOJtxE2MycGEuaW5ncmVkaWVudC52MwAAAAAYYzJzaLAPbCETsr6kn5v68moYq7QAAABwY2JvcqNpZGM6Zm9ybWF0bWltYWdlL3N2Zyt4bWxqaW5zdGFuY2VJRHgseG1wOmlpZDo5YWQ3NTAwZC0zMGQ1LTRlMjctODZhNi0wZTRjOWVjYWQ2MjJscmVsYXRpb25zaGlwaHBhcmVudE9mAAAB4mp1bWIAAABBanVtZGNib3IAEQAQgAAAqgA4m3ETYzJwYS5hY3Rpb25zLnYyAAAAABhjMnNoZ+oCHT9fBblIUchFuWeo6wAAAZljYm9yomdhY3Rpb25zgqJmYWN0aW9ua2MycGEub3BlbmVkanBhcmFtZXRlcnOha2luZ3JlZGllbnRzgaJjdXJseC1zZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmluZ3JlZGllbnQudjNkaGFzaFggBE7OIP7C7QIZXFt4+mi2Ho/YqmjX+a5PKjn88NOSaXakZmFjdGlvbngdY29tLmFudGhyb3BpYy5jbGF1ZGUucHJvdmlkZWRqcGFyYW1ldGVyc6F4H2NvbS5hbnRocm9waWMub3JpZ2luLWNvbmZpZGVuY2VndW5rbm93bmtkZXNjcmlwdGlvbnhmQ2xhdWRlIHByb3ZpZGVkIHRoaXMgZmlsZSBhdCB0aGUgcmVxdWVzdCBvZiBhIHVzZXIgYW5kIG1heSBoYXZlIGNyZWF0ZWQgb3IgbW9kaWZpZWQgdGhlIGZpbGUgY29udGVudHMubXNvZnR3YXJlQWdlbnShZG5hbWVmQ2xhdWRlcmFsbEFjdGlvbnNJbmNsdWRlZPUAAADIanVtYgAAAEBqdW1kY2JvcgARABCAAACqADibcRNjMnBhLmhhc2guZGF0YQAAAAAYYzJzaLkfYesHIgDjTy2LYni0svIAAACAY2JvcqVjYWxnZnNoYTI1NmNwYWRMAAAAAAAAAAAAAAAAZGhhc2hYICleWXzby0yeUbgtMiiY85K9p58+G/Cgd3w2Ha733eOHZG5hbWVuanVtYmYgbWFuaWZlc3RqZXhjbHVzaW9uc4GiZXN0YXJ0GRmEZmxlbmd0aBkeBAAAAj5qdW1iAAAAJ2p1bWRjMmNsABEAEIAAAKoAOJtxA2MycGEuY2xhaW0udjIAAAACD2Nib3KlY2FsZ2ZzaGEyNTZpc2lnbmF0dXJleE1zZWxmI2p1bWJmPS9jMnBhL3VybjpjMnBhOjdiYTJlYmFkLWM4NGMtNDdlOS05ZTdmLTJhODQwYzM2YjA4Yy9jMnBhLnNpZ25hdHVyZWppbnN0YW5jZUlEeCx4bXA6aWlkOmM0ZDNkNTVhLWMwYzgtNDIzNy1iNjhiLTZhMzhiZDllNTZlMHJjcmVhdGVkX2Fzc2VydGlvbnODomN1cmx4LXNlbGYjanVtYmY9YzJwYS5hc3NlcnRpb25zL2MycGEuaW5ncmVkaWVudC52M2RoYXNoWCAETs4g/sLtAhlcW3j6aLYej9iqaNf5rk8qOfzw05JpdqJjdXJseCpzZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmFjdGlvbnMudjJkaGFzaFggEpC1OTFEjlSvwTimZ5SEN6n9ytKcMIh5s9rS/JpTqnGiY3VybHgpc2VsZiNqdW1iZj1jMnBhLmFzc2VydGlvbnMvYzJwYS5oYXNoLmRhdGFkaGFzaFggRBzl7oKGqrZ3+f2o3w7eAmuQrdcqs/nQCORU2dzpPyJ0Y2xhaW1fZ2VuZXJhdG9yX2luZm+jZG5hbWVvQW50aHJvcGljIEZpbGVzZ3ZlcnNpb25lMS4wLjBrc3BlY1ZlcnNpb25lMi40LjAAABA4anVtYgAAAChqdW1kYzJjcwARABCAAACqADibcQNjMnBhLnNpZ25hdHVyZQAAABAIY2JvctKEWQISogEmGCFZAgowggIGMIIBjaADAgECAhRA5aAK7sI50L64g/oGQgU9Z1UTADAKBggqhkjOPQQDAzBJMRcwFQYDVQQKEw5BbnRocm9waWMsIFBCQzEuMCwGA1UEAxMlQW50aHJvcGljIENvbnRlbnQgQ3JlZGVudGlhbHMgUm9vdCBDQTAeFw0yNjA4MDcxODQzNTZaFw0yODA4MDYxOTQzNTZaMEQxFzAVBgNVBAoTDkFudGhyb3BpYywgUEJDMSkwJwYDVQQDEyBBbnRocm9waWMgQ2xhdWRlIENvbnRlbnQgU2lnbmluZzBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABJh6CmvLUBgFFNU0vUKlOVtE6djd17L5SuwX0LemFisBM3dkd/3cyjxFA3Qo5S46fX0/ihY0VZ7mfb9KF703t5OjWDBWMA4GA1UdDwEB/wQEAwIHgDAVBgNVHSUEDjAMBgorBgEEAYPoXgIBMAwGA1UdEwEB/wQCMAAwHwYDVR0jBBgwFoAUzlHiBIFOZFsj+OPEz5o+nMHXXMIwCgYIKoZIzj0EAwMDZwAwZAIwMXMdFJ4BetLLVY7ORuE9noqbbAZOZn/aArXyTwFAZfKrPzxF2vPoJNf1+UCdg1XGAjBwX1zd9WGqYkqmL5SFqw1QySjr1zJfpJM9+1rdDwSPLMOPOjKuiXjoU/pUUeG9RwmhY3BhZFkNngAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPZYQF14T2zFR0+A0/0zhMKfIJP/2jJIJ/3wdT3DtuA/GBJlLWH67wfYegyF7DRukuizRsfMEe8aZtqA/BxrKcnaCZk=</c2pa:manifest></metadata></svg>
